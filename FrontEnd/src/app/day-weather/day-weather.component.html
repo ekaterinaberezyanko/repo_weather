@@ -1,0 +1,27 @@
+<div class="todayWeather" *ngIf="isWeather">
+  <p>Сьогоднi {{todayWeather.dateDay}} {{ service.getMonth(todayWeather.dateMonth) }}</p>
+  <p>Погоднi умови будуть такими:</p>
+  <p>Температура вдень/вночi: {{ todayWeather.dayTemp }}/{{ todayWeather.nightTemp }}</p>
+  <p>Хмарнiсть: {{ todayWeather.cloudySky }}</p>
+  <p>День буде <span *ngIf="todayWeather.windSpeed === 0">без вiтру</span><span
+      *ngIf="todayWeather.windSpeed !== 0">вiтряний</span></p>
+  <p>
+    <span *ngIf="todayWeather.propabPrecipitation >= 50">Передбачаються опади</span>
+    <span *ngIf="todayWeather.propabPrecipitation <= 50">Опадiв не передбачається</span>
+  </p>
+  <p *ngIf="todayWeather.cataclism !== ''">Сьогодні буде {{ todayWeather.cataclism }}</p>
+  <p>Бажаємо гарного дня</p>
+</div>
+<div class="todayWeather" *ngIf="!isWeather">
+  <p>Прогнозу на сьогодні немає</p>
+</div>
+
+<div class="quiz" *ngIf="!service.isVoted">
+  <h1>Опитування</h1>
+  <h3>Протягом дня спостерiгались опади ?</h3>
+  <button (click)="service.vote(true, todayWeather.id)">Так</button>
+  <button (click)="service.vote(false, todayWeather.id)">Нi</button>
+</div>
+<div class="quizVoted" *ngIf="service.isVoted">
+    <h1>Дякуємо за ваш голос</h1>
+  </div>

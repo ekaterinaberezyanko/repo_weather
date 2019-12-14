@@ -1,0 +1,22 @@
+.todayWeather {
+    text-align: center;
+    margin: 20px 25%;
+    padding: 15px 0;
+    border: 1px solid black;
+}
+
+.quiz {
+    text-align: center;
+
+}
+
+.quiz > button {
+    padding: 1% 10%;
+    margin: 0 2%;
+}
+
+.quizVoted {
+    color: black;
+    text-align: center;
+    background: #71ff45;
+}

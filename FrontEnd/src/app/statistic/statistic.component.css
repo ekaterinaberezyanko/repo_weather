@@ -1,0 +1,10 @@
+.statistic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.statistic > div {
+    width: 50%;
+    text-align: center;
+}

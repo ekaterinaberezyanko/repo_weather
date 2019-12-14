@@ -1,0 +1,36 @@
+.addWeather {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px 25%;
+    padding: 15px 0;
+    border: 1px solid black;
+}
+
+form > div {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
+.date > label{
+    width: 60px;
+}
+
+.date > input {
+    margin-right: 10px;
+}
+
+input {
+    width: 80px;
+}
+
+label {
+    width: 150px;
+}
+
+.btn{
+    width: 200px;
+    margin: 10px auto;
+}

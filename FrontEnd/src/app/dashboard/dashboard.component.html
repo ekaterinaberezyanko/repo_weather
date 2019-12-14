@@ -1,0 +1,12 @@
+<div>
+  <nav class="menu">
+    <button routerLink="/dashboard">Погода на сьогодні</button>
+    <button routerLink="/dashboard/weather/">Прогноз погоди на тиждень</button>
+    <button routerLink="/dashboard/statistic">Статистика</button>
+    <button routerLink="/dashboard/addweather" *ngIf="service.getAdmin()">Додати Прогноз</button>
+    <button (click)="logOut()">Вихід</button>
+  </nav>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.enter{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+}
+
+.title-enter {
+    display: block;
+}
+
+.btn-enter {
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 1rem;
+    
+}

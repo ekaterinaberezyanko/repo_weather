@@ -1,0 +1,41 @@
+<div class="addWeather">
+  <form action="">
+    <div class="date">
+      <label for="day">День :</label>
+      <input type="number" name="day" [(ngModel)]="data.dateDay" required>
+      <label for="month">Мiсяць :</label>
+      <input type="number" name="month" [(ngModel)]="data.dateMonth" required>
+    </div>
+    <div>
+      <label for="dayTemp">Температура вдень :</label>
+      <input type="number" name="dayTemp" [(ngModel)]="data.dayTemp" required>
+    </div>
+    <div>
+      <label for="nightTemp">Температура вночi :</label>
+      <input type="number" name="nightTemp" [(ngModel)]="data.nightTemp" required>
+    </div>
+    <div>
+      <label for="propabPrecipitation">Ймовiрнiсть опадiв :</label>
+      <input type="number" name="propabPrecipitation" [(ngModel)]="data.propabPrecipitation" required>
+    </div>
+    <div>
+      <label for="windSpeed">Швидкiсть вiтру :</label>
+      <input type="number" name="windSpeed" [(ngModel)]="data.windSpeed" required>
+    </div>
+    <div>
+      <label for="cloudySky">Хмарнiсть :</label>
+      <input type="text" name="cloudySky" [(ngModel)]="data.cloudySky" required>
+    </div>
+    <div>
+      <label for="airHumidity">Вологiсть повiтря :</label>
+      <input type="number" name="airHumidity" [(ngModel)]="data.airHumidity" required>
+    </div>
+    <div>
+        <label for="cataclism">Катаклізми :</label>
+        <input type="text" name="cataclism" [(ngModel)]="data.cataclism" required>
+      </div>
+    <div>
+      <button class="btn" (click)="addWeather()">Додати прогноз</button>
+    </div>
+  </form>
+</div>

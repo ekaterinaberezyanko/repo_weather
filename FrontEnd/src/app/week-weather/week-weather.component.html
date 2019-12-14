@@ -1,0 +1,24 @@
+<table class="table" border="1">
+  <tbody>
+    <tr class="header">
+      <td>Дата</td>
+      <td>Температура вночi</td>
+      <td>Температура вдень</td>
+      <td>Ймовірність опадів</td>
+      <td>Швидкість вітру</td>
+      <td>Хмарність неба</td>
+      <td>Вологість повітря</td>
+    </tr>
+    <tr class="dayItem" *ngFor="let item of data">
+        <td>{{item.dateDay}} {{ weatherService.getMonth(item.dateMonth) }}</td>
+        <td>{{ item.dayTemp }}</td>
+        <td>{{item.nightTemp}}</td>
+        <td>{{item.propabPrecipitation}}</td>
+        <td>{{item.windSpeed}}</td>
+        <td>{{item.cloudySky}}</td>
+        <td>{{item.airHumidity}}%</td>
+    </tr>
+  </tbody>
+  
+  
+</table>

@@ -1,0 +1,19 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    margin: 25vh auto;
+}
+
+.loginForm > h1 {
+    text-align: center;
+}
+
+.loginForm > input{
+    margin-bottom: 20px;
+}
+
+.alert-danger {
+    text-align: center;
+    background: red;
+}

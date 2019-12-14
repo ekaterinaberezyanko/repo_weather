@@ -1,0 +1,11 @@
+<div class="loginForm">
+  <h1>Вхiд</h1>
+  <label for="code">Введiть особистий код:</label>
+  <input name="code" type="text" [(ngModel)]="user.code" required>
+  <label for="password">Введiть пароль:</label>
+  <input name="password" type="password" [(ngModel)]="user.password" required>
+  <div [hidden]="!denied" class="alert-danger">
+    Вхiд заблоковано
+  </div>
+  <button class="btn" (click)="login(code, password)">Увiйти</button>
+</div>
